@@ -28,7 +28,7 @@ if (!(Test-Path $settingsJson)){
 $targetConfig = [System.IO.Path]::Combine($terminalConfigPath, "settings.json")
 if (Test-Path $targetConfig){
     Write-Information "Found settings.json. Renaming to settings.json.bak..."
-    Rename-Item -LiteralPath $targetConfig "settings.json.bak"
+    Rename-Item -LiteralPath $targetConfig "settings.json.bak" -Force
 }
 $files = Get-ChildItem -LiteralPath $settingsPath
 $files | Copy-Item -Destination $terminalConfigPath -Force
