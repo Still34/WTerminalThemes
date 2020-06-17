@@ -15,7 +15,7 @@ The settings add PowerShell Core, PowerShell Core (Admin via [gsudo](https://git
 
 Install `scoop` first if you have not installed any of the additional terminals.
 
-~~Run `Install-Theme.ps1` to install the relevant files. Existing settings will be renamed as `settings.json.bak`.~~ __NOT YET IMPLEMENTED__
+Run `Install-Theme.ps1` to install the relevant files. Existing settings will be renamed as `settings.json.bak`.
 
 ## Author
 
