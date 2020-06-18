@@ -17,7 +17,7 @@ function Get-Scoop {
     return $scoop
 }
 function Install-Dependencies {
-    $dependencies = "php", "node", "python3"
+    $dependencies = "php", "node", "python3", "gsudo"
     foreach ($dependency in $dependencies) {
         if (!(Get-Command $dependency -ErrorAction SilentlyContinue)) {
             $choices = '&Yes', '&No'
