@@ -17,6 +17,17 @@ Install `scoop` first if you have not installed any of the additional terminals.
 
 Run `Install-Theme.ps1` to install the relevant files. Existing settings will be renamed as `settings.json.bak`.
 
+## Artworks
+
+Artworks other than open-source brandings (e.g., Node.JS logo, PowerShell logo, etc.) referenced in the config are not included in the repo. Please support the artists by visiting their official source(s). If you would like to install these files, place the files under the `src` directory with their respective filename.
+
+- [Amiya](https://www.pixiv.net/en/artworks/81890963) by [RynzFrancis](https://twitter.com/RynzFrancis)
+  - Default for PowerShell Core (`pwsh`)
+  - Referenced filename: `amiya.png`
+- [Hatsune Miku](https://gelbooru.com/index.php?page=post&s=view&id=3421789) by [iXima](https://twitter.com/iximaxima)
+  - Default for Windows PowerShell (`powershell`)
+  - Referenced filename: `miku.png`
+
 ## Author
 
 👤 **Still Hsu**
