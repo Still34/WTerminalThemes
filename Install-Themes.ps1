@@ -41,7 +41,7 @@ function Install-Config {
 
     # Get WindowsTerminal package name
     $terminalAppxs = Get-AppxPackage -Name Microsoft.WindowsTerminal*
-    if ($null -eq $terminalAppx) {
+    if ($null -eq $terminalAppxs) {
         throw "Windows Terminal is not installed."
     }
     foreach ($terminalAppx in $terminalAppxs) {
