@@ -40,38 +40,39 @@ function Install-Config {
     }
 
     # Get WindowsTerminal package name
-    $terminalAppx = Get-AppxPackage -Name Microsoft.WindowsTerminal
+    $terminalAppxs = Get-AppxPackage -Name Microsoft.WindowsTerminal*
     if ($null -eq $terminalAppx) {
         throw "Windows Terminal is not installed."
     }
-
-    # Get LocalState config directory
-    $terminalConfigPath = [System.IO.Path]::Combine($env:LOCALAPPDATA, "packages", $terminalAppx.PackageFamilyName, "LocalState")
-    if (!(Test-Path $terminalConfigPath)) {
-        throw "Windows Terminal configuration path not found."
-    }
-
-    $settingsJson = [System.IO.Path]::Combine($PSScriptRoot, "src", "settings.json")
-    $settingsPath = [System.IO.Path]::GetDirectoryName($settingsJson)
-    if (!(Test-Path $settingsJson)) {
-        throw "Installation files not found."
-    }
-
-    $targetConfig = [System.IO.Path]::Combine($terminalConfigPath, "settings.json")
-    $configBackupPath = $targetConfig + [DateTime]::Now.ToString('-yyyy-MM-dd_hh.mm.ss') + ".bak"
-    if (Test-Path $targetConfig) {
-        $targetConfigHash = Get-FileHash -Algorithm SHA256 -LiteralPath $targetConfig
-        $srcConfigHash = Get-FileHash -Algorithm SHA256 -LiteralPath $settingsJson
-        if ($targetConfigHash.Hash -ne $srcConfigHash.Hash) {
-            Write-Warning "Found previous config, backing up to $configBackupPath..." -WarningAction Continue
-            if (Test-Path $configBackupPath) {
-                Remove-Item -LiteralPath $configBackupPath
-            }
-            Rename-Item -LiteralPath $targetConfig $configBackupPath
+    foreach ($terminalAppx in $terminalAppxs) {
+        # Get LocalState config directory
+        $terminalConfigPath = [System.IO.Path]::Combine($env:LOCALAPPDATA, "packages", $terminalAppx.PackageFamilyName, "LocalState")
+        if (!(Test-Path $terminalConfigPath)) {
+            throw "Windows Terminal configuration path not found."
         }
+
+        $settingsJson = [System.IO.Path]::Combine($PSScriptRoot, "src", "settings.json")
+        $settingsPath = [System.IO.Path]::GetDirectoryName($settingsJson)
+        if (!(Test-Path $settingsJson)) {
+            throw "Installation files not found."
+        }
+
+        $targetConfig = [System.IO.Path]::Combine($terminalConfigPath, "settings.json")
+        $configBackupPath = $targetConfig + [DateTime]::Now.ToString('-yyyy-MM-dd_hh.mm.ss') + ".bak"
+        if (Test-Path $targetConfig) {
+            $targetConfigHash = Get-FileHash -Algorithm SHA256 -LiteralPath $targetConfig
+            $srcConfigHash = Get-FileHash -Algorithm SHA256 -LiteralPath $settingsJson
+            if ($targetConfigHash.Hash -ne $srcConfigHash.Hash) {
+                Write-Warning "Found previous config, backing up to $configBackupPath..." -WarningAction Continue
+                if (Test-Path $configBackupPath) {
+                    Remove-Item -LiteralPath $configBackupPath
+                }
+                Rename-Item -LiteralPath $targetConfig $configBackupPath
+            }
+        }
+        $files = Get-ChildItem -LiteralPath $settingsPath
+        $files | Copy-Item -Destination $terminalConfigPath -Force
     }
-    $files = Get-ChildItem -LiteralPath $settingsPath
-    $files | Copy-Item -Destination $terminalConfigPath -Force
 
     Write-Host "Finished installing Windows Terminal settings. Enjoy!" -BackgroundColor DarkGreen
 }
