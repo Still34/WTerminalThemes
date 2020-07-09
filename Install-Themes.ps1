@@ -72,6 +72,7 @@ function Install-Config {
         }
         $files = Get-ChildItem -LiteralPath $settingsPath
         $files | Copy-Item -Destination $terminalConfigPath -Force
+        Write-Host "Copied files to $terminalConfigPath" -BackgroundColor Blue
     }
 
     Write-Host "Finished installing Windows Terminal settings. Enjoy!" -BackgroundColor DarkGreen

@@ -20,7 +20,7 @@
                 "name": "PowerShell Core",
                 "source": "Windows.Terminal.PowershellCore",
                 "backgroundImage": "ms-appdata:///local/amiya.png",
-                "background": "#513E40"
+                "background": "#1b5463"
             },
             {
                 "guid": "{5146592f-028b-44f6-a8af-c4edb8f550f7}",
