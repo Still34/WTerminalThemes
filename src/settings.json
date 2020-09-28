@@ -50,7 +50,8 @@
                 "tabTitle": "Linux (WSL)",
                 "source": "Windows.Terminal.Wsl",
                 "colorScheme": "One Half Dark",
-                "backgroundImage": "ms-appdata:///local/asuna.png"
+                "backgroundImage": "ms-appdata:///local/asuna.png",
+                "background": "#4b391f"
                 // FOSS logo
                 // "backgroundImage": "ms-appdata:///local/wsl.png",
                 // "backgroundImageAlignment": "topRight",
