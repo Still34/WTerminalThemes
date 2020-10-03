@@ -125,92 +125,24 @@
             "yellow": "#D7BA7D"
         }
     ],
-    // Add any keybinding overrides to this array.
-    // To unbind a default keybinding, set the command to "unbound"
     "keybindings": [
-        {
-            "command": "renameTab",
-            "keys": "shift+f2"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "split": "horizontal",
-                "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}"
-            },
-            "keys": "shift+down"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "split": "horizontal",
-                "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}"
-            },
-            "keys": "shift+alt+down"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "split": "horizontal",
-                "profile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}"
-            },
-            "keys": "shift+ctrl+alt+down"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "split": "vertical",
-                "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}"
-            },
-            "keys": "shift+alt+right"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "split": "vertical",
-                "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}"
-            },
-            "keys": "shift+right"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "split": "vertical",
-                "profile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}"
-            },
-            "keys": "shift+alt+ctrl+right"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}"
-            },
-            "keys": "ctrl+pgup"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "profile": "{5146592f-028b-44f6-a8af-c4edb8f550f7}"
-            },
-            "keys": "ctrl+alt+pgup"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "profile": "{be10b1e0-71b7-41a5-817b-d344acdc2c4e}"
-            },
-            "keys": "ctrl+shift+alt+pgup"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}"
-            },
-            "keys": "ctrl+pgdn"
-        },
-        {
-            "command": "closePane",
-            "keys": "ctrl+w"
-        }
+        // New tab for PowerShell Core
+        { "command": { "action": "newTab", "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}" }, "keys": "f1" },
+        // New tab for PowerShell
+        { "command": { "action": "newTab", "profile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}" }, "keys": "f2" },
+        // New tab for WSL
+        { "command": { "action": "newTab", "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}" }, "keys": "f3" },
+        // New vertical pane for PowerShell Core
+        { "command": { "action": "splitPane", "split": "vertical", "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}" }, "keys": "ctrl+alt+shift+a" },
+        // New vertical pane for WSL
+        { "command": { "action": "splitPane", "split": "vertical", "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}" }, "keys": "ctrl+alt+shift+d" },
+        // New horizontal pane for PowerShell Core
+        { "command": { "action": "splitPane", "split": "horizontal", "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}" }, "keys": "ctrl+alt+shift+w" },
+        // New horizontal pane for WSL
+        { "command": { "action": "splitPane", "split": "horizontal", "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}" }, "keys": "ctrl+alt+shift+s" },
+        { "command": { "action": "switchToTab", "index": 0 }, "keys": "shift+f1" },
+        { "command": { "action": "switchToTab", "index": 1 }, "keys": "shift+f2" },
+        { "command": { "action": "switchToTab", "index": 2 }, "keys": "shift+f3" },
+        { "command": "closePane", "keys": "ctrl+w" }
     ]
 }
