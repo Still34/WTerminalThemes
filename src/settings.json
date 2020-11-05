@@ -36,8 +36,8 @@
             },
             {
                 "guid": "{5602fcde-13d6-411c-925f-a9b232121aa2}",
-                "name": "DbgShell",
-                "commandline": "DbgShell.exe",
+                "name": "PowerShell Analyzer",
+                "commandline": "psana.cmd",
                 "startingDirectory": "%USERPROFILE%",
                 "background": "#671515",
                 "icon": "ms-appdata:///local/posh-color.png",
