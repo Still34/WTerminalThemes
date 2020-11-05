@@ -132,6 +132,8 @@
         { "command": { "action": "newTab", "profile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}" }, "keys": "f2" },
         // New tab for WSL
         { "command": { "action": "newTab", "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}" }, "keys": "f3" },
+        // New tab for PSAna
+        { "command": { "action": "newTab", "profile": "{5602fcde-13d6-411c-925f-a9b232121aa2}" }, "keys": "f4" },
         // New vertical pane for PowerShell Core
         { "command": { "action": "splitPane", "split": "vertical", "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}" }, "keys": "ctrl+alt+shift+a" },
         // New vertical pane for WSL
