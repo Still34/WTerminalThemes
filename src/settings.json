@@ -1,69 +1,194 @@
-// To view the default settings, hold "alt" while clicking on the "Settings" button.
-// For documentation on these settings, see: https://aka.ms/terminal-documentation
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [
+        {
+            "command": "closePane",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "split": "horizontal"
+            },
+            "keys": "ctrl+alt+shift+w"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "split": "vertical"
+            },
+            "keys": "ctrl+alt+shift+a"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "split": "vertical"
+            },
+            "keys": "ctrl+alt+shift+d"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "split": "horizontal"
+            },
+            "keys": "ctrl+alt+shift+s"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 1
+            },
+            "keys": "f2"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 0
+            },
+            "keys": "f1"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 2
+            },
+            "keys": "f3"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 3
+            },
+            "keys": "f4"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 4
+            },
+            "keys": "f5"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 5
+            },
+            "keys": "f6"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 6
+            },
+            "keys": "f7"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 7
+            },
+            "keys": "f8"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 8
+            },
+            "keys": "f9"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 9
+            },
+            "keys": "f10"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 10
+            },
+            "keys": "f11"
+        },
+        {
+            "command": {
+                "action": "newTab",
+                "index": 11
+            },
+            "keys": "f12"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+w"
+        }
+    ],
+    "copyFormatting": "none",
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "experimental.rendering.forceFullRepaint": false,
+    "launchMode": "default",
     "profiles": {
         "defaults": {
-            "useAcrylic": true,
-            "acrylicOpacity": 0.75,
-            "fontFace": "Hack",
+            "acrylicOpacity": 0.80000000000000004,
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageOpacity": 0.25,
             "backgroundImageStretchMode": "uniform",
             "colorScheme": "vscode",
-            "suppressApplicationTitle": true
+            "font": {
+                "face": "Hack NF",
+                "size": 9
+            },
+            "suppressApplicationTitle": true,
+            "useAcrylic": true
         },
         "list": [
             {
+                "background": "#1D4742",
+                "backgroundImage": "ms-appdata:///local/pwsh.png",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell Core",
-                "tabTitle": "PowerShell Core",
                 "source": "Windows.Terminal.PowershellCore",
-                "backgroundImage": "ms-appdata:///local/amiya.png",
-                "background": "#2b1e3b",
-                "acrylicOpacity": 0.8
+                "tabTitle": "PowerShell Core"
             },
             {
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "name": "PowerShell",
-                "tabTitle": "PowerShell",
-                "commandline": "powershell.exe",
-                "hidden": false,
                 "backgroundImage": "ms-appdata:///local/miku.png",
-                "colorScheme": "Campbell Powershell"
+                "colorScheme": "Campbell Powershell",
+                "commandline": "powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "PowerShell",
+                "tabTitle": "PowerShell"
             },
             {
-                "guid": "{5602fcde-13d6-411c-925f-a9b232121aa2}",
-                "name": "PowerShell Analyzer",
-                "commandline": "psana.cmd",
-                "startingDirectory": "%USERPROFILE%",
+                "background": "#3D0527",
+                "backgroundImage": "ms-appdata:///local/4thofjuly.png",
+                "commandline": "pwsh.exe -noexit -enc SQBtAHAAbwByAHQALQBNAG8AZAB1AGwAZQAgACcAQwA6AFwAUAByAG8AZwByAGEAbQAgAEYAaQBsAGUAcwBcAE0AaQBjAHIAbwBzAG8AZgB0ACAAVgBpAHMAdQBhAGwAIABTAHQAdQBkAGkAbwBcADIAMAAyADIAXABQAHIAZQB2AGkAZQB3AFwAQwBvAG0AbQBvAG4ANwBcAFQAbwBvAGwAcwBcAE0AaQBjAHIAbwBzAG8AZgB0AC4AVgBpAHMAdQBhAGwAUwB0AHUAZABpAG8ALgBEAGUAdgBTAGgAZQBsAGwALgBkAGwAbAAnADsARQBuAHQAZQByAC0AVgBzAEQAZQB2AFMAaABlAGwAbAAgADUAZQA1ADEANQA5AGIAMAA=",
+                "guid": "{d98b920c-59ce-404a-a346-05c24ba00c1a}",
+                "name": "PowerShell for VS"
+            },
+            {
                 "background": "#671515",
+                "backgroundImage": "ms-appdata:///local/posh-color.png",
+                "commandline": "psana.cmd",
+                "guid": "{5602fcde-13d6-411c-925f-a9b232121aa2}",
+                "hidden": true,
                 "icon": "ms-appdata:///local/posh-color.png",
-                "backgroundImage": "ms-appdata:///local/posh-color.png"
+                "name": "PowerShell Analyzer",
+                "startingDirectory": "%USERPROFILE%"
             },
             {
+                "background": "#524265",
+                "backgroundImage": "ms-appdata:///local/silvervale.png",
+                "colorScheme": "One Half Dark",
                 "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
                 "hidden": false,
                 "name": "WSL",
-                "tabTitle": "Linux (WSL)",
                 "source": "Windows.Terminal.Wsl",
-                "colorScheme": "One Half Dark",
-                "backgroundImage": "ms-appdata:///local/asuna.png",
-                "background": "#4b391f"
-                // FOSS logo
-                // "backgroundImage": "ms-appdata:///local/wsl.png",
-                // "backgroundImageAlignment": "topRight",
-                // "backgroundImageOpacity": 0.1
-            },
-            {
-                "guid": "{d98b920c-59ce-404a-a346-05c24ba00c1a}",
-                "name": "Metasploit",
-                "commandline": "msfconsole.bat",
-                "background": "#0d78b9",
-                "icon": "ms-appdata:///local/metasploit-logo.png",
-                "backgroundImage": "ms-appdata:///local/metasploit-logo.png"
+                "tabTitle": "Linux (WSL)"
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
@@ -72,40 +197,269 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "name": "cmd",
                 "commandline": "cmd.exe",
+                "font": {
+                    "face": "Consolas"
+                },
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": true,
-                "fontFace": "Consolas"
+                "name": "cmd"
             },
             {
-                "guid": "{e95426bf-3114-4fd2-bb65-c318622bbaba}",
-                "name": "Python 3",
+                "backgroundImage": "ms-appdata:///local/python-logo.png",
                 "commandline": "py -3",
+                "guid": "{e95426bf-3114-4fd2-bb65-c318622bbaba}",
                 "icon": "ms-appdata:///local/python-logo.png",
-                "backgroundImage": "ms-appdata:///local/python-logo.png"
+                "name": "Python 3"
             },
             {
-                "guid": "{564f2a9e-63a5-48f3-a053-4883577948a1}",
-                "name": "Node.JS",
+                "backgroundImage": "ms-appdata:///local/node-logo.png",
                 "commandline": "node",
+                "guid": "{564f2a9e-63a5-48f3-a053-4883577948a1}",
                 "icon": "ms-appdata:///local/node-logo.png",
-                "backgroundImage": "ms-appdata:///local/node-logo.png"
+                "name": "Node.JS"
             },
             {
-                "guid": "{3198b4fa-9296-4ca7-bd31-edd8a296d019}",
-                "name": "PHP",
+                "backgroundImage": "ms-appdata:///local/php-logo.png",
                 "commandline": "php -a",
+                "guid": "{3198b4fa-9296-4ca7-bd31-edd8a296d019}",
                 "icon": "ms-appdata:///local/php-logo.png",
-                "backgroundImage": "ms-appdata:///local/php-logo.png"
+                "name": "PHP"
+            },
+            {
+                "backgroundImage": "ms-appdata:///local/plex.png",
+                "commandline": "ssh still@plexbox.still.network -p 59442",
+                "guid": "{0861e0c3-12b0-4fc5-9d1d-c362c5d8256c}",
+                "icon": "ms-appdata:///local/plex.png",
+                "name": "SSH - Plexbox"
+            },
+            {
+                "backgroundImage": "ms-appdata:///local/pi.png",
+                "commandline": "ssh still@pihole.still.network -p 54011",
+                "guid": "{7a2f0f64-941a-4ee2-96a5-a5943fdc8e9a}",
+                "icon": "ms-appdata:///local/pi.png",
+                "name": "SSH - PiHole"
+            },
+            {
+                "background": "#463031",
+                "backgroundImage": "ms-appdata:///local/kirby.png",
+                "commandline": "ssh kirby@kirby.still.network -p 65354",
+                "guid": "{3cfd70c6-0d5a-4d0a-9eb6-c994b57564fe}",
+                "icon": "ms-appdata:///local/kirby.png",
+                "name": "SSH - Kirby"
             }
         ]
     },
-    // Add custom color schemes to this array
     "schemes": [
         {
-            "name": "vscode",
-            "background": "#1d1d2c",
+            "background": "#0C0C0C",
+            "black": "#0C0C0C",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#CCCCCC",
+            "green": "#13A10E",
+            "name": "Campbell",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
+        },
+        {
+            "background": "#012456",
+            "black": "#0C0C0C",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#3B78FF",
+            "brightCyan": "#61D6D6",
+            "brightGreen": "#16C60C",
+            "brightPurple": "#B4009E",
+            "brightRed": "#E74856",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#F9F1A5",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#CCCCCC",
+            "green": "#13A10E",
+            "name": "Campbell Powershell",
+            "purple": "#881798",
+            "red": "#C50F1F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#C19C00"
+        },
+        {
+            "background": "#282C34",
+            "black": "#282C34",
+            "blue": "#61AFEF",
+            "brightBlack": "#5A6374",
+            "brightBlue": "#61AFEF",
+            "brightCyan": "#56B6C2",
+            "brightGreen": "#98C379",
+            "brightPurple": "#C678DD",
+            "brightRed": "#E06C75",
+            "brightWhite": "#DCDFE4",
+            "brightYellow": "#E5C07B",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#56B6C2",
+            "foreground": "#DCDFE4",
+            "green": "#98C379",
+            "name": "One Half Dark",
+            "purple": "#C678DD",
+            "red": "#E06C75",
+            "selectionBackground": "#FFFFFF",
+            "white": "#DCDFE4",
+            "yellow": "#E5C07B"
+        },
+        {
+            "background": "#FAFAFA",
+            "black": "#383A42",
+            "blue": "#0184BC",
+            "brightBlack": "#4F525D",
+            "brightBlue": "#61AFEF",
+            "brightCyan": "#56B5C1",
+            "brightGreen": "#98C379",
+            "brightPurple": "#C577DD",
+            "brightRed": "#DF6C75",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#E4C07A",
+            "cursorColor": "#4F525D",
+            "cyan": "#0997B3",
+            "foreground": "#383A42",
+            "green": "#50A14F",
+            "name": "One Half Light",
+            "purple": "#A626A4",
+            "red": "#E45649",
+            "selectionBackground": "#FFFFFF",
+            "white": "#FAFAFA",
+            "yellow": "#C18301"
+        },
+        {
+            "background": "#002B36",
+            "black": "#002B36",
+            "blue": "#268BD2",
+            "brightBlack": "#073642",
+            "brightBlue": "#839496",
+            "brightCyan": "#93A1A1",
+            "brightGreen": "#586E75",
+            "brightPurple": "#6C71C4",
+            "brightRed": "#CB4B16",
+            "brightWhite": "#FDF6E3",
+            "brightYellow": "#657B83",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#2AA198",
+            "foreground": "#839496",
+            "green": "#859900",
+            "name": "Solarized Dark",
+            "purple": "#D33682",
+            "red": "#DC322F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#EEE8D5",
+            "yellow": "#B58900"
+        },
+        {
+            "background": "#FDF6E3",
+            "black": "#002B36",
+            "blue": "#268BD2",
+            "brightBlack": "#073642",
+            "brightBlue": "#839496",
+            "brightCyan": "#93A1A1",
+            "brightGreen": "#586E75",
+            "brightPurple": "#6C71C4",
+            "brightRed": "#CB4B16",
+            "brightWhite": "#FDF6E3",
+            "brightYellow": "#657B83",
+            "cursorColor": "#002B36",
+            "cyan": "#2AA198",
+            "foreground": "#657B83",
+            "green": "#859900",
+            "name": "Solarized Light",
+            "purple": "#D33682",
+            "red": "#DC322F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#EEE8D5",
+            "yellow": "#B58900"
+        },
+        {
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#3465A4",
+            "brightBlack": "#555753",
+            "brightBlue": "#729FCF",
+            "brightCyan": "#34E2E2",
+            "brightGreen": "#8AE234",
+            "brightPurple": "#AD7FA8",
+            "brightRed": "#EF2929",
+            "brightWhite": "#EEEEEC",
+            "brightYellow": "#FCE94F",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#06989A",
+            "foreground": "#D3D7CF",
+            "green": "#4E9A06",
+            "name": "Tango Dark",
+            "purple": "#75507B",
+            "red": "#CC0000",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D3D7CF",
+            "yellow": "#C4A000"
+        },
+        {
+            "background": "#FFFFFF",
+            "black": "#000000",
+            "blue": "#3465A4",
+            "brightBlack": "#555753",
+            "brightBlue": "#729FCF",
+            "brightCyan": "#34E2E2",
+            "brightGreen": "#8AE234",
+            "brightPurple": "#AD7FA8",
+            "brightRed": "#EF2929",
+            "brightWhite": "#EEEEEC",
+            "brightYellow": "#FCE94F",
+            "cursorColor": "#000000",
+            "cyan": "#06989A",
+            "foreground": "#555753",
+            "green": "#4E9A06",
+            "name": "Tango Light",
+            "purple": "#75507B",
+            "red": "#CC0000",
+            "selectionBackground": "#FFFFFF",
+            "white": "#D3D7CF",
+            "yellow": "#C4A000"
+        },
+        {
+            "background": "#000000",
+            "black": "#000000",
+            "blue": "#000080",
+            "brightBlack": "#808080",
+            "brightBlue": "#0000FF",
+            "brightCyan": "#00FFFF",
+            "brightGreen": "#00FF00",
+            "brightPurple": "#FF00FF",
+            "brightRed": "#FF0000",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFF00",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#008080",
+            "foreground": "#C0C0C0",
+            "green": "#008000",
+            "name": "Vintage",
+            "purple": "#800080",
+            "red": "#800000",
+            "selectionBackground": "#FFFFFF",
+            "white": "#C0C0C0",
+            "yellow": "#808000"
+        },
+        {
+            "background": "#1D1D2C",
             "black": "#000000",
             "blue": "#579BD5",
             "brightBlack": "#797979",
@@ -116,35 +470,18 @@
             "brightRed": "#F6645D",
             "brightWhite": "#EAEAEA",
             "brightYellow": "#F6F353",
+            "cursorColor": "#FFFFFF",
             "cyan": "#00B6D6",
             "foreground": "#D3D3D3",
             "green": "#3FC48A",
+            "name": "vscode",
             "purple": "#CA5BC8",
             "red": "#D8473F",
+            "selectionBackground": "#FFFFFF",
             "white": "#EAEAEA",
             "yellow": "#D7BA7D"
         }
     ],
-    "keybindings": [
-        // New tab for PowerShell Core
-        { "command": { "action": "newTab", "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}" }, "keys": "f1" },
-        // New tab for PowerShell
-        { "command": { "action": "newTab", "profile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}" }, "keys": "f2" },
-        // New tab for WSL
-        { "command": { "action": "newTab", "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}" }, "keys": "f3" },
-        // New tab for PSAna
-        { "command": { "action": "newTab", "profile": "{5602fcde-13d6-411c-925f-a9b232121aa2}" }, "keys": "f4" },
-        // New vertical pane for PowerShell Core
-        { "command": { "action": "splitPane", "split": "vertical", "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}" }, "keys": "ctrl+alt+shift+a" },
-        // New vertical pane for WSL
-        { "command": { "action": "splitPane", "split": "vertical", "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}" }, "keys": "ctrl+alt+shift+d" },
-        // New horizontal pane for PowerShell Core
-        { "command": { "action": "splitPane", "split": "horizontal", "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}" }, "keys": "ctrl+alt+shift+w" },
-        // New horizontal pane for WSL
-        { "command": { "action": "splitPane", "split": "horizontal", "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}" }, "keys": "ctrl+alt+shift+s" },
-        { "command": { "action": "switchToTab", "index": 0 }, "keys": "shift+f1" },
-        { "command": { "action": "switchToTab", "index": 1 }, "keys": "shift+f2" },
-        { "command": { "action": "switchToTab", "index": 2 }, "keys": "shift+f3" },
-        { "command": "closePane", "keys": "ctrl+w" }
-    ]
+    "startOnUserLogin": true,
+    "windowingBehavior": "useExisting"
 }
