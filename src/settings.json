@@ -1,152 +1,56 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
-        {
-            "command": "closePane",
-            "keys": "ctrl+shift+w"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-                "split": "horizontal"
-            },
-            "keys": "ctrl+alt+shift+w"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "profile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-                "split": "vertical"
-            },
-            "keys": "ctrl+alt+shift+a"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-                "split": "vertical"
-            },
-            "keys": "ctrl+alt+shift+d"
-        },
-        {
-            "command": {
-                "action": "splitPane",
-                "profile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-                "split": "horizontal"
-            },
-            "keys": "ctrl+alt+shift+s"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 1
-            },
-            "keys": "f2"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 0
-            },
-            "keys": "f1"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 2
-            },
-            "keys": "f3"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 3
-            },
-            "keys": "f4"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 4
-            },
-            "keys": "f5"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 5
-            },
-            "keys": "f6"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 6
-            },
-            "keys": "f7"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 7
-            },
-            "keys": "f8"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 8
-            },
-            "keys": "f9"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 9
-            },
-            "keys": "f10"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 10
-            },
-            "keys": "f11"
-        },
-        {
-            "command": {
-                "action": "newTab",
-                "index": 11
-            },
-            "keys": "f12"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+w"
-        }
+    "actions":[
+        {"command":{"action":"splitPane","profile":"{574e775e-4f2a-5b96-ac1e-a2962a402336}","split":"horizontal"},"keys":"ctrl+alt+shift+w"},
+        {"command":{"action":"splitPane","profile":"{574e775e-4f2a-5b96-ac1e-a2962a402336}","split":"vertical"},"keys":"ctrl+alt+shift+a"},
+        {"command":{"action":"splitPane","profile":"{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}","split":"horizontal"},"keys":"ctrl+alt+shift+d"},
+        {"command":{"action":"splitPane","profile":"{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}","split":"vertical"},"keys":"ctrl+alt+shift+s"},
+        {"command":{"action":"splitPane","profile":"{d98b920c-59ce-404a-a346-05c24ba00c1a}","split":"horizontal"},"keys":"ctrl+alt+shift+home"},
+        {"command":{"action":"splitPane","profile":"{d98b920c-59ce-404a-a346-05c24ba00c1a}","split":"vertical"},"keys":"ctrl+alt+shift+end"},
+        {"command":{"action":"newTab","index":0},"keys":"f1"},
+        {"command":{"action":"newTab","index":1},"keys":"f2"},
+        {"command":{"action":"newTab","index":2},"keys":"f3"},
+        {"command":{"action":"newTab","index":3},"keys":"f4"},
+        {"command":{"action":"newTab","index":4},"keys":"f5"},
+        {"command":{"action":"newTab","index":5},"keys":"f6"},
+        {"command":{"action":"newTab","index":6},"keys":"f7"},
+        {"command":{"action":"newTab","index":7},"keys":"f8"},
+        {"command":{"action":"newTab","index":8},"keys":"f9"},
+        {"command":{"action":"newTab","index":9},"keys":"f10"},
+        {"command":{"action":"newTab","index":10},"keys":"f11"},
+        {"command":{"action":"newTab","index":11},"keys":"f12"},
+        {"command":{"action":"quakeMode"}},
+        {"command":"closePane","keys":"ctrl+shift+w"},
+        {"command":"unbound","keys":"ctrl+w"},
+        {"command":"unbound","keys":"win+sc(41)"},
+        {"command":"unbound","keys":""}
     ],
     "copyFormatting": "none",
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "experimental.rendering.forceFullRepaint": false,
     "launchMode": "default",
-    "profiles": {
-        "defaults": {
-            "acrylicOpacity": 0.80000000000000004,
+    "profiles": 
+    {
+        "defaults": 
+        {
             "backgroundImageAlignment": "bottomRight",
             "backgroundImageOpacity": 0.25,
             "backgroundImageStretchMode": "uniform",
             "colorScheme": "vscode",
-            "font": {
+            "font": 
+            {
                 "face": "Hack NF",
-                "size": 9
+                "size": 10
             },
+            "acrylicOpacity": 0.85,
             "suppressApplicationTitle": true,
             "useAcrylic": true
         },
-        "list": [
+        "list": 
+        [
             {
-                "background": "#1D4742",
+                "background": "#093E42",
                 "backgroundImage": "ms-appdata:///local/pwsh.png",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
@@ -165,8 +69,8 @@
             },
             {
                 "background": "#3D0527",
-                "backgroundImage": "ms-appdata:///local/4thofjuly.png",
-                "commandline": "pwsh.exe -noexit -enc SQBtAHAAbwByAHQALQBNAG8AZAB1AGwAZQAgACcAQwA6AFwAUAByAG8AZwByAGEAbQAgAEYAaQBsAGUAcwBcAE0AaQBjAHIAbwBzAG8AZgB0ACAAVgBpAHMAdQBhAGwAIABTAHQAdQBkAGkAbwBcADIAMAAyADIAXABQAHIAZQB2AGkAZQB3AFwAQwBvAG0AbQBvAG4ANwBcAFQAbwBvAGwAcwBcAE0AaQBjAHIAbwBzAG8AZgB0AC4AVgBpAHMAdQBhAGwAUwB0AHUAZABpAG8ALgBEAGUAdgBTAGgAZQBsAGwALgBkAGwAbAAnADsARQBuAHQAZQByAC0AVgBzAEQAZQB2AFMAaABlAGwAbAAgADUAZQA1ADEANQA5AGIAMAA=",
+                "backgroundImage": "ms-appdata:///local/zerotwo.png",
+                "commandline": "pwsh.exe -noexit -enc SQBtAHAAbwByAHQALQBNAG8AZAB1AGwAZQAgACcAQwA6AFwAUAByAG8AZwByAGEAbQAgAEYAaQBsAGUAcwAgACgAeAA4ADYAKQBcAE0AaQBjAHIAbwBzAG8AZgB0ACAAVgBpAHMAdQBhAGwAIABTAHQAdQBkAGkAbwBcADIAMAAxADkAXABDAG8AbQBtAHUAbgBpAHQAeQBcAEMAbwBtAG0AbwBuADcAXABUAG8AbwBsAHMAXABNAGkAYwByAG8AcwBvAGYAdAAuAFYAaQBzAHUAYQBsAFMAdAB1AGQAaQBvAC4ARABlAHYAUwBoAGUAbABsAC4AZABsAGwAJwA7ACAARQBuAHQAZQByAC0AVgBzAEQAZQB2AFMAaABlAGwAbAAgAGIANAA4AGEAMQAyAGIAMAA7ACAAYwBkACAAJABlAG4AdgA6AHIAZQBwAG8AcwA=",
                 "guid": "{d98b920c-59ce-404a-a346-05c24ba00c1a}",
                 "name": "PowerShell for VS"
             },
@@ -181,9 +85,9 @@
                 "startingDirectory": "%USERPROFILE%"
             },
             {
-                "background": "#524265",
-                "backgroundImage": "ms-appdata:///local/silvervale.png",
-                "colorScheme": "One Half Dark",
+                "background": "#472332",
+                "backgroundImage": "ms-appdata:///local/wsl_bg.png",
+                "backgroundImageOpacity": 0.14999999999999999,
                 "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
                 "hidden": false,
                 "name": "WSL",
@@ -198,7 +102,8 @@
             },
             {
                 "commandline": "cmd.exe",
-                "font": {
+                "font": 
+                {
                     "face": "Consolas"
                 },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
@@ -226,31 +131,10 @@
                 "icon": "ms-appdata:///local/php-logo.png",
                 "name": "PHP"
             },
-            {
-                "backgroundImage": "ms-appdata:///local/plex.png",
-                "commandline": "ssh still@plexbox.still.network -p 59442",
-                "guid": "{0861e0c3-12b0-4fc5-9d1d-c362c5d8256c}",
-                "icon": "ms-appdata:///local/plex.png",
-                "name": "SSH - Plexbox"
-            },
-            {
-                "backgroundImage": "ms-appdata:///local/pi.png",
-                "commandline": "ssh still@pihole.still.network -p 54011",
-                "guid": "{7a2f0f64-941a-4ee2-96a5-a5943fdc8e9a}",
-                "icon": "ms-appdata:///local/pi.png",
-                "name": "SSH - PiHole"
-            },
-            {
-                "background": "#463031",
-                "backgroundImage": "ms-appdata:///local/kirby.png",
-                "commandline": "ssh kirby@kirby.still.network -p 65354",
-                "guid": "{3cfd70c6-0d5a-4d0a-9eb6-c994b57564fe}",
-                "icon": "ms-appdata:///local/kirby.png",
-                "name": "SSH - Kirby"
-            }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
